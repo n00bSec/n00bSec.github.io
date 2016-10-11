@@ -16,7 +16,7 @@
 title: n00bSec
 email: dreamist@live.unc.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Occasional write-ups and educational material for peers.
+  Occasional write-ups and educational material for peers, written by a student.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://n00bSec.github.io" # the base hostname & protocol for your site
 #twitter_username: 
