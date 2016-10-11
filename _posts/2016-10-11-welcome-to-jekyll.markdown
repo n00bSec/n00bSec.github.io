@@ -82,6 +82,8 @@ In x86 processes, there's a hardware stack built upon and popped from during run
 		
 It just so happens that strings are read from high to low in memory as well, which means that if scanf were provided a long enough string, it would copy the input we provide through the space of input[], through int length, and even flag[] (but we don't wanna damage what we aim to steal). 
 
+<h2>Exploitation</h2>
+
 Our buffer input has 50 characters worth of space, and our number int would usually have 4. To fill this space then, we could fill it with 50-53 bytes of junk, so that we can wipe out the null byte when we fill in the space for the number.
 
 Note we should not that we print out the whole space and our flag post-exploitation by guessing wrong. Irony. 
@@ -90,7 +92,7 @@ Anyways, I like to use Python for this kind of thing to save on the tedium, but 
 
 {% highlight BASH %}
 
-	$ python -c "print 'a'*52; print '22222222222222222'" | ./guesslength
+$ python -c "print 'a'*52; print '22222222222222222'" | ./guesslength
 Enter your text: Guess the length of this text: The actual length of 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa���MREDACTED' is 64, not 1303176078. Sorry :(
 
 {% endhighlight %}
