@@ -63,13 +63,15 @@ With the call to setbuf(), I assume the author removed line-buffering for printi
 
 After that, they build a structure containing two 50-length character buffers meant to hold strings, with an integer variable between them. In conventional C, strings are written and compiled as backwards null-terminated arrays, meaning they're characters gathered right next to each other in memory, with a byte holding the value of 0 denoting where it ends. Can probably imagine it like...
 
-
+{% highlight C %}
 char s[] = "hello";
+{% endhighlight %}
 
 meaning...
 
-
+{% highlight C %}
  |0x68 = 'h'|0x65 = 'e'|0x6c = 'l' |0x6c = 'l' | 0x6f = o |0x00 = NULL| other data... |
+{% endhighlight %}
 
 If that null byte is removed, the string could potentially never end as far as your program is concerned, and functions that read strings will only stop when they find a null byte. C programming can be unsafe like that if you don't take precaution, allowing us in this case to leak data.
 
