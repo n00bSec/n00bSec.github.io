@@ -134,6 +134,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-sass-converter
   minima
 
 RUBY VERSION
