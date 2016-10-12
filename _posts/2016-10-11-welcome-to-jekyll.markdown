@@ -89,7 +89,7 @@ In x86 processes, there's a hardware stack built upon and popped from during run
 		
 It just so happens that strings are read from low to high in memory as well, which means that if scanf were provided a long enough string, it would copy the input we provide through the space of input[], through int length, and even flag[] (but we don't wanna damage what we aim to steal). 
 
-<h2>Exsploitation</h2>
+<h2>Exploitation</h2>
 
 Our buffer input has 50 characters worth of space, and our number int would usually have 4. To fill this space then, we could fill it with 50-53 bytes of junk, so that we can wipe out the null byte when we fill in the space for the number.
 
