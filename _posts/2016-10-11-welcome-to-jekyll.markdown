@@ -85,7 +85,7 @@ In x86 processes, there's a hardware stack built upon and popped from during run
 		base-0x36: [int variable, probably 4 bytes long in 32-bit proccess]
 		base-0x68: [50 chars for our input]
 		
-		<span size="8pt">Notice that this stack may look upside down. The base starts high and the top grows into lower addresses spaces..</span> 
+<span size="8pt">Notice that this stack may look upside down. The base starts high and the top grows into lower addresses spaces..</span> 
 		
 It just so happens that strings are read from low to high in memory as well, which means that if scanf were provided a long enough string, it would copy the input we provide through the space of input[], through int length, and even flag[] (but we don't wanna damage what we aim to steal). 
 
