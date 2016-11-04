@@ -7,6 +7,8 @@ categories: update post exploitation
 
 <h2>Introduction</h2>
 
+<i>This information is tailored towards x86-64 Linux machines, with bits of information that'd have gotten me along faster when I was first learning these kinds of exploits.</i>
+
 Inspired largely by my time reading "Hacking: The Art of Exploitation" during the past summer, this post tutorializes basic buffer overflow exploits on Linux machines. A buffer overflow occurs when a memory array (a buffer) is written through and past its intended bounds, corrupting nearby data in higher memory space. A program vulnerable to a buffer overflow exploit is able to be controlled by attackers in such a way that the programmer is no longer the one who decides what the computer will do. On modern operating systems protections are in place to inhibit attackers from exploiting programs that can use them, but we'll cheat a bit by removing them, because showing how to bypass them would cause this tutorial to be too long.
 
 An understanding of the basics of C programming and familiarity with some scripting language is preferred to take away most of the understanding from this post, but a familiarity with x86 assembly make the rest of it less arcane. Other tools I'll be using will include:
