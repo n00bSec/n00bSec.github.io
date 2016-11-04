@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Taking Over Programs With Buffer Overflows"
-date:   2016-10-11 10:53:00 -0400
+date:   2016-11-5 9:00:00 -0400
 categories: update post exploitation
 ---
 
