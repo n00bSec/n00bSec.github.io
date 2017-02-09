@@ -143,3 +143,10 @@ With this, anyone could write their own user into the passwd file. After generat
 	su: must be run from a terminal
 
 /dev/console can't be rm'd with the permissions of www-data, and neither Make, GCC, TCC, or Python is installed in the VM. There is Perl, but I couldn't figure out anything I could accomplish with Perl that the PHP shell script hadn't already tried. So this is about where I decided I was done. I don't have the flag, but I'm happy enough with the shell I got, unless someone out there would like to give me the low down on stealing tty devices, or escalating my priviledges without one. 
+
+<h1>The Day After</h1>
+
+<img src="/pics/wot.png">
+
+...I guess my mistake was not running the VM in headless mode. 
+
