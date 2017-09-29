@@ -30,7 +30,7 @@ There's no way I could cover format string exploitation as well as other resourc
 <li>For book reading, you can pick up Hacking: The Art of Exploitation.</li>
 <li><a href="https://www.youtube.com/watch?v=0WvrSfcdq1I">LiveOverflow's videos</a> on string format exploitation are great.</li>
 <li><a href="https://www.youtube.com/watch?v=xAdjDEwENCQ">Gynvael Coldwind has a stream</a> on the topic, with CTFs in mind.</li>
-<li><a href="http://phrack.org/issues/59/7.html">Phrack</a>, <a href="http://phrack.org/issues/67/9.html">Phrack</a>, <a href="http://phrack.org/issues/67/13.html">Phrack</a></li>
+<li><a href="http://phrack.org/issues/67/9.html">Phrack</a>, <a href="http://phrack.org/issues/67/13.html">Phrack</a></li>
 </ul>
 
 The Phrack articles may not be great primers for strict beginners, but they're worth reading still.
